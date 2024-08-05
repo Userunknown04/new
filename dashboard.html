@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Dashboard</h1>
+            <nav>
+                <a href="login.html" class="logout-button">Logout</a>
+            </nav>
+        </header>
+
+        <section class="profile-card">
+            <img src="profile-picture-placeholder.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <p><strong>Roll No:</strong> <span id="roll-no"></span></p>
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>Year:</strong> <span id="year"></span></p>
+                <p><strong>Branch:</strong> <span id="branch"></span></p>
+                <p><strong>Mobile No:</strong> <span id="mobile-no"></span></p>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>Update Year</h2>
+            <form method="POST" action="update-year.php">
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                </select>
+                <input type="submit" name="action" value="Update Year">
+            </form>
+        </section>
+
+        <section class="form-card">
+            <h2>Results</h2>
+            <form method="POST" action="view-results.php">
+                <label for="results-semester">Semester:</label>
+                <select id="results-semester" name="semester" required>
+                    <option value="I-I">I-I</option>
+                    <option value="I-II">I-II</option>
+                    <option value="II-I">II-I</option>
+                    <option value="II-II">II-II</option>
+                    <option value="III-I">III-I</option>
+                    <option value="III-II">III-II</option>
+                    <option value="IV-I">IV-I</option>
+                    <option value="IV-II">IV-II</option>
+                </select>
+                <input type="submit" name="action" value="View Results">
+            </form>
+
+            <div id="results-table">
+               
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>Attendance</h2>
+            <form method="POST" action="view-attendance.php">
+                <label for="attendance-semester">Semester:</label>
+                <select id="attendance-semester" name="semester" required>
+                    <option value="I-I">I-I</option>
+                    <option value="I-II">I-II</option>
+                    <option value="II-I">II-I</option>
+                    <option value="II-II">II-II</option>
+                    <option value="III-I">III-I</option>
+                    <option value="III-II">III-II</option>
+                    <option value="IV-I">IV-I</option>
+                    <option value="IV-II">IV-II</option>
+                </select>
+                <input type="submit" name="action" value="View Attendance">
+            </form>
+
+            <div id="attendance-table">
+               
+            </div>
+        </section>
+    </div>
+</body>
+</html>

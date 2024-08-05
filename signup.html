@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form method="POST" enctype="multipart/form-data" action="signup.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="I-I">I-I</option>
+                <option value="I-II">I-II</option>
+                <option value="II-I">II-I</option>
+                <option value="II-II">II-II</option>
+                <option value="III-I">III-I</option>
+                <option value="III-II">III-II</option>
+                <option value="IV-I">IV-I</option>
+                <option value="IV-II">IV-II</option>
+            </select>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="CSE">CSE</option>
+                <option value="CSM">CSM</option>
+                <option value="CSD">CSD</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECHANICAL">MECHANICAL</option>
+                <option value="CHEMICAL">CHEMICAL</option>
+            </select>
+
+            <label for="roll_no">Roll No:</label>
+            <input type="text" id="roll_no" name="roll_no" required>
+
+            <label for="mobile_no">Mobile No:</label>
+            <input type="text" id="mobile_no" name="mobile_no" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture">
+
+            <input type="submit" value="Signup">
+        </form>
+    </div>
+</body>
+</html>
